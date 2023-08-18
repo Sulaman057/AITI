@@ -6,11 +6,22 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    screens: {
+      '2xl': { max: '1500px' },
+      xl: { max: '1279px' },
+      lg: { max: '1050px' },
+      md: { max: '850px' },
+      sm: { max: '580px' },
+      xs: { max: '475px' },
+      xxs: { max: '375px' },
+    },
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        primary: '#004F6F',
+        accent: '#00FFA9',
+        bg: '#111111',
+        dec: '#0077A7',
+        lightprimary: '#008FC9'
       },
     },
   },
